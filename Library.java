@@ -1,4 +1,3 @@
-package Unit2Project;
 /*
  * AP CS A
  * PROJ 02: OOP ~ L.M.S.
@@ -81,9 +80,8 @@ class Library {
 
     public boolean addMember(Member newMember)
     {
-        boolean added = newMember.addMemberToLibrary(this);
 
-        if (added) {
+        if (newMember.addMemberToLibrary(this) && findMemberByEmail(newMember.getEmail()) == null) {
             myMembers.add(newMember);
             memberFees.add(0.0);
             return true;
