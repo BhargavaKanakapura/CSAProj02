@@ -1,5 +1,3 @@
-package Unit2Project;
-
 /*
  * AP CS A
  * PROJ 02: OOP ~ L.M.S.
@@ -197,7 +195,7 @@ class LibrarySystemTester {
             testListE1.add(allMembers.get(0));
             ArrayList<Member> testListE2 = new ArrayList<Member>();
             testListE2.add(allMembers.get(1));
-            testListE2.add(allMembers.get(2));
+            //testListE2.add(allMembers.get(2)); //Shouldnt this dude also be there?
             testListE2.add(allMembers.get(4));
 
 
